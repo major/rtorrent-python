@@ -21,7 +21,7 @@ class RTorrent(RPCObject, RTContext):
 
         return self.available_rpc_methods
 
-    def get_torrents(self, view=None) -> [Torrent]:
+    def get_torrents(self, view=None):
         # TODO: accept View or str as argument,
         # create View object if str is given
         if view is None:
